@@ -1,0 +1,31 @@
+<%- include("../partials/header") %>
+
+    <main class="container">
+
+        <div class="row p-3 mt-5 align-middle">
+            <div class="card p-3 m-2">
+                <div class="card-header ">
+                    <%= blogs.title %>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= blogs.desc %>
+                    </h5>
+                    <p class="card-text">
+                        <%= blogs.blog %>
+                    </p>
+                    <footer class="blockquote-footer">
+                        <%= blogs.name %>
+                    </footer>
+                    <a href="/blogs/<%= blogs._id %>/edit" class="btn btn-warning btn-small">EDIT</a>
+                    <form class="d-inline-block" action="/blogs/<%= blogs._id %>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger btn-small">DELETE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <%- include("../partials/footer") %>

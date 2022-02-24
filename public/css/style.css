@@ -1,0 +1,45 @@
+h1{
+    margin: 30px auto;
+}
+#head{
+    text-decoration: none;
+    color: #fca311;
+}
+
+body{
+    background-color: #14213d;
+}
+
+.card{
+    background-color: #e5e5e5;
+}
+
+.card-header{
+    background-color: #ffffff;
+}
+
+/* .row{
+    margin: 30px auto;
+    padding: 10px auto;
+} */
+.form-label{
+    color: #ffffff;
+}
+#ed{
+    padding: 25px;
+    margin: 30px auto;
+    border: 2px solid #e5e5e5;
+    border-radius:10px ;
+    box-shadow: 0 0 5px #ffffff;
+}
+.fs-3{
+    color: #ffd166;
+}
+
+#nw{
+    padding: 25px;
+    margin: 30px auto;
+    border: 2px solid #e5e5e5;
+    border-radius:10px ;
+    box-shadow: 0 0 5px #ffffff;
+}

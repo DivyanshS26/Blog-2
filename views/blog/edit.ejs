@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+
+    <main class="container">
+
+        <div class="row">
+            <p class="fs-3">Edit Your Blog</p>
+            <form action="/blogs/<%= blogs._id %>?_method=PATCH" method="POST" id="ed">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name: </label>
+                    <input type="text" class="form-control" id="name" name="name" value="<%= blogs.name %> ">
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title: </label>
+                    <input type="text" class="form-control" id="title" name="title" value="<%= blogs.title %> ">
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description: </label>
+                    <input type="text" class="form-control" id="desc" name="desc" value="<%= blogs.desc %> ">
+                </div>
+                <div class="mb-3">
+                    <label for="blog" class="form-label">Blog: </label>
+                    <textarea class="form-control" name="blog" id="blog" rows="3"><%= blogs.blog %> </textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-small">Done</button>
+            </form>
+
+        </div>
+
+    </main>
+
+
+
+    <%- include("../partials/footer") %>

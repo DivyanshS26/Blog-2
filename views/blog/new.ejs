@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+
+    <main class="container">
+
+        <div class="row">
+            <p class="fs-3">New Blog</p>
+            <form action="/blogs" method="POST" id="nw">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name: </label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name here">
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title: </label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Give Title">
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Description: </label>
+                    <input type="text" class="form-control" id="desc" name="desc" placeholder="Suitable Description">
+                </div>
+                <div class="mb-3">
+                    <label for="blog" class="form-label">Blog: </label>
+                    <textarea class="form-control" name="blog" id="blog" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-small">Done</button>
+            </form>
+
+        </div>
+
+    </main>
+
+
+
+    <%- include("../partials/footer") %>

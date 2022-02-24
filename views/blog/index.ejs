@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+
+    <main class="container">
+       
+        <div class="row">
+            <% for(let blogg of blogs){%>
+                <div class="card p-3 m-2">
+                    <div class="card-header">
+                        <%= blogg.title %>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= blogg.desc %>
+                        </h5>
+                        <p class="card-text">
+                            <%= blogg.blog %>
+                        </p>
+                        <footer class="blockquote-footer">
+                            <%= blogg.name %>
+                        </footer>
+                        <a href="/blogs/<%= blogg._id %>" class="btn btn-outline-primary">Show</a>
+                    </div>
+                </div>
+
+                <%} %>
+                <a href="/blogs/new" class=" d-inline-block btn btn-success col-3 m-3 p-2" id="newbtn">New Blog</a>
+        </div>
+
+
+    </main>
+
+
+    <%- include("../partials/footer") %>
